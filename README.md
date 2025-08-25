@@ -1,58 +1,65 @@
-# Portfolio Website
+# Sahil Chandel – Portfolio Website
 
-This is a personal portfolio website built using Vite+React, Tailwind CSS, and Framer Motion to showcase my skills, projects, and experience.
-
-## Features
-- **Responsive Design** – Works on all screen sizes.
-- **Smooth Animations** – Powered by Framer Motion for interactive user experience.
-- **Dark Mode Support** – Stylish UI with light and dark theme toggling.
-- **Optimized Performance** – Efficient rendering and smooth navigation.
-- **SEO Friendly** – Optimized for better search engine visibility.
-
-## Tech Stack
-- **Frontend:** React.js
-- **Styling:** Tailwind CSS
-- **Animations:** Framer Motion
-
-## Installation & Setup
-
-1. Clone the repository:
-   ```sh
-   git clone https://github.com/sathishk-dev/illustration-portfolio.git
-   ```
-2. Navigate to the project directory:
-   ```sh
-   cd illustration-portfolio
-   ```
-3. Install dependencies:
-   ```sh
-   npm install
-   ```
-4. Start the development server:
-   ```sh
-   npm run dev
-   ```
-   The app will be available at `http://localhost:3000/`.
-
-## Demo
-Check out the live demo of the portfolio website: [Live Demo](https://sk-illustration-portfolio.netlify.app/)
-
-## Deployment
-To deploy the portfolio website, you can use platforms like:
-- **Vercel**
-- **Netlify**
-- **GitHub Pages** (with additional configurations)
-
-## How to Contribute
-If you’d like to contribute or improve this project, feel free to fork the repository and submit a pull request.
-
-## 🙌 Show Your Support
-If you like this project, please star it and share it with your friends!
-
-## Contact
-If you have any questions or suggestions, feel free to reach out via:
-- **Email:** sathish31102004@gmail.com
-- **LinkedIn:** [@sathishk-dev](https://linkedin.com/in/sathishk-dev)
+This is my personal portfolio website showcasing my projects, skills, and experience.  
+It is designed to highlight my work as a full-stack developer and provide an easy way for recruiters and collaborators to connect with me.
 
 ---
-Made with ❤️ by Sathish Kumar.
+
+## 🌐 Live Demo
+**Hosted Link:** [Portfolio Website](https://himalayandev.netlify.app)  
+*(Replace this with your actual hosted link when deployed)*
+
+---
+
+## 🛠 Tech Stack
+- **Frontend:** React.js / Next.js / Astro.js (depending on which you used)
+- **Backend:** Node.js, Express.js
+- **Database:** MongoDB / MySQL
+- **Hosting:** AWS / Vercel / Netlify / GitHub Pages
+- **Other Tools:** Nginx (for reverse proxy), Razorpay API (if applicable), Firebase
+
+---
+
+## 📂 Features
+- Responsive and mobile-friendly design
+- Project showcase with descriptions and tech stacks
+- About Me section with education and work experience
+- Contact section with social links and email integration
+- (Optional) Blog section powered by Markdown or CMS (if added)
+
+---
+
+## 🚀 Installation & Setup
+
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/<your-username>/<your-repo>.git
+    cd <your-repo>
+    ```
+
+2. Install dependencies:
+    ```bash
+    npm install
+    ```
+
+3. Start the development server:
+    ```bash
+    npm run dev
+    ```
+
+4. Build for production:
+    ```bash
+    npm run build
+    npm start
+    ```
+---
+
+## 📬 Contact
+- **Email:** [sahilchandel4200@gmail.com](mailto:sahilchandel4200@gmail.com)  
+- **LinkedIn:** [Sahil Chandel](https://in.linkedin.com/in/sahil-chandel-a02779292)  
+- **GitHub:** [yourusername](https://github.com/yourusername)
+
+---
+
+> *Feel free to fork or star this repo if you find it helpful!*
+
