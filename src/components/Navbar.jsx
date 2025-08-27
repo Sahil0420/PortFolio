@@ -36,6 +36,15 @@ export default function Navbar() {
         }`}
     >
       <div className="container mx-auto flex justify-between items-center">
+       <motion.img
+        whileHover={{scale:1.1}}
+          whileTap={{scale:0.9}}
+          onClick={()=> scrollToSection("home")}
+          className="cursor-pointer w-[100px]"
+          src="/assets/favicon.svg"
+        />
+
+
         <motion.img
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
@@ -43,14 +52,6 @@ export default function Navbar() {
           className="cursor-pointer w-[100px]"
           src="/assets/logo.png"
           alt="Logo"
-        />
-
-        <motion.img
-        whileHover={{scale:1.1}}
-          whileTap={{scale:0.9}}
-          onClick={()=> scrollToSection("home")}
-          className="cursor-pointer w-[100px]"
-          src="/assets/favicon.svg"
         />
 
         <ul className="hidden lg:flex items-center gap-x-7 font-semibold">
