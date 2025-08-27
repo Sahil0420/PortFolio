@@ -45,6 +45,14 @@ export default function Navbar() {
           alt="Logo"
         />
 
+        <motion.img
+        whileHover={{scale:1.1}}
+          whileTap={{scale:0.9}}
+          onClick={()=> scrollToSection("home")}
+          className="cursor-pointer w-[100px]"
+          src="/assets/favicon.svg"
+        />
+
         <ul className="hidden lg:flex items-center gap-x-7 font-semibold">
           {["about", "skills", "projects", "contact"].map((section) => (
             <motion.li
