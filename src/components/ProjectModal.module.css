@@ -1,0 +1,143 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  padding: 20px;
+}
+
+.modal {
+  background: white;
+  border: 3px solid black;
+  width: 90%;
+  max-width: 750px;
+  max-height: 85vh;
+  /* Prevents modal from overflowing screen */
+  display: flex;
+  flex-direction: column;
+  box-shadow: 12px 12px 0px 0px black;
+  position: relative;
+  overflow: hidden;
+  /* Important: keeps scroll inside */
+}
+
+.modalHeader {
+  padding: 1rem 2rem;
+  border-bottom: 2px solid black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f0f0f0;
+}
+
+.scrollBody {
+  padding: 2rem;
+  overflow-y: auto;
+  /* Enables scrolling */
+  flex-grow: 1;
+}
+
+/* Custom Pixel Scrollbar */
+.scrollBody::-webkit-scrollbar {
+  width: 12px;
+}
+
+.scrollBody::-webkit-scrollbar-track {
+  background: white;
+  border-left: 2px solid black;
+}
+
+.scrollBody::-webkit-scrollbar-thumb {
+  background: black;
+  border: 2px solid white;
+}
+
+.title {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.section {
+  margin-top: 2.5rem;
+}
+
+.section h4 {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.85rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.text {
+  font-size: 1.15rem;
+  line-height: 1.6;
+}
+
+.featureList {
+  list-style: none;
+  padding: 0;
+}
+
+.featureItem {
+  margin-bottom: 0.75rem;
+  display: flex;
+  gap: 12px;
+  font-weight: 500;
+}
+
+.bullet {
+  color: #facc15;
+  /* Yellow accent */
+}
+
+.actionBar {
+  padding: 1.5rem 2rem;
+  border-top: 2px solid black;
+  display: flex;
+  gap: 1rem;
+  background: white;
+}
+
+.btnPrimary {
+  background: black;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  text-decoration: none;
+  font-weight: bold;
+  border: 2px solid black;
+}
+
+.btnPrimary:hover {
+  background: white;
+  color: black;
+}
+
+.btnSecondary {
+  background: white;
+  color: black;
+  padding: 0.8rem 1.5rem;
+  text-decoration: none;
+  font-weight: bold;
+  border: 2px solid black;
+}
+
+.closeBtn {
+  background: none;
+  border: none;
+  font-family: monospace;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.pixelLabel {
+  font-family: monospace;
+  font-weight: bold;
+  font-size: 0.75rem;
+  color: #666;
+}

@@ -1,0 +1,208 @@
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--space-4xl) var(--space-xl);
+    position: relative;
+}
+
+.heroInner {
+    max-width: var(--max-width);
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: var(--space-3xl);
+    align-items: center;
+}
+
+.heroContent {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-lg);
+}
+
+.greeting {
+    font-family: var(--font-mono);
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--accent-pink);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.name {
+    font-size: clamp(2.8rem, 7vw, 5rem);
+    font-weight: 800;
+    line-height: 1.05;
+    color: var(--text-primary);
+}
+
+.nameHighlight {
+    color: var(--accent-blue);
+    position: relative;
+    display: inline-block;
+}
+
+.titleText {
+    font-family: var(--font-mono);
+    font-size: clamp(1rem, 2vw, 1.3rem);
+    font-weight: 500;
+    color: var(--text-secondary);
+    border: var(--border-black);
+    background: var(--accent-yellow);
+    padding: var(--space-xs) var(--space-md);
+    display: inline-block;
+    box-shadow: var(--pixel-shadow-sm);
+}
+
+.bio {
+    font-size: 1.1rem;
+    max-width: 560px;
+    color: var(--text-secondary);
+    line-height: 1.8;
+}
+
+.heroActions {
+    display: flex;
+    gap: var(--space-md);
+    flex-wrap: wrap;
+    margin-top: var(--space-md);
+}
+
+.btnPrimary,
+.btnSecondary {
+    font-family: var(--font-mono);
+    font-weight: 700;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    padding: var(--space-sm) var(--space-lg);
+    border: var(--border-thick);
+    cursor: pointer;
+    transition: box-shadow 0.15s, transform 0.15s;
+    pointer-events: auto !important;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-sm);
+}
+
+.btnPrimary {
+    background: var(--text-primary);
+    color: var(--bg-primary);
+    box-shadow: var(--pixel-shadow);
+}
+
+.btnPrimary:hover {
+    box-shadow: var(--pixel-shadow-hover);
+    transform: translate(-4px, -4px);
+}
+
+.btnSecondary {
+    background: var(--bg-secondary);
+    color: var(--text-primary);
+    box-shadow: var(--pixel-shadow);
+}
+
+.btnSecondary:hover {
+    box-shadow: var(--pixel-shadow-hover);
+    transform: translate(-4px, -4px);
+}
+
+.heroVisual {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+    align-items: flex-end;
+}
+
+.statusCard {
+    border: var(--border-thick);
+    background: var(--bg-secondary);
+    padding: var(--space-lg);
+    box-shadow: var(--pixel-shadow);
+    min-width: 260px;
+}
+
+.statusHeader {
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: var(--text-muted);
+    margin-bottom: var(--space-md);
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+}
+
+.statusDot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--accent-green);
+    display: inline-block;
+    animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.4;
+    }
+}
+
+.statusItem {
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    padding: var(--space-xs) 0;
+    border-bottom: 1px dashed #ddd;
+    display: flex;
+    justify-content: space-between;
+}
+
+.statusItem:last-child {
+    border-bottom: none;
+}
+
+.statusValue {
+    font-weight: 700;
+    color: var(--text-primary);
+}
+
+.locationCard {
+    border: var(--border-black);
+    background: var(--accent-yellow);
+    padding: var(--space-sm) var(--space-md);
+    box-shadow: var(--pixel-shadow-sm);
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+/* ── Responsive ── */
+
+@media (max-width: 768px) {
+    .heroInner {
+        grid-template-columns: 1fr;
+        gap: var(--space-2xl);
+    }
+
+    .heroVisual {
+        align-items: stretch;
+    }
+
+    .hero {
+        min-height: auto;
+        padding-top: var(--space-3xl);
+        padding-bottom: var(--space-2xl);
+    }
+}

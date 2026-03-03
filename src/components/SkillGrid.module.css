@@ -1,0 +1,87 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: var(--space-md);
+}
+
+.badge {
+    border: var(--border-thick);
+    background: var(--bg-secondary);
+    padding: var(--space-md);
+    box-shadow: var(--pixel-shadow);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-sm);
+    cursor: default;
+    position: relative;
+    overflow: hidden;
+}
+
+.badgeName {
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-align: center;
+    color: var(--text-primary);
+}
+
+.badgeCategory {
+    font-family: var(--font-mono);
+    font-size: 0.6rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: var(--text-muted);
+}
+
+.levelBar {
+    width: 100%;
+    height: 6px;
+    background: var(--bg-accent);
+    border: 1px solid #000;
+    overflow: hidden;
+}
+
+.levelFill {
+    height: 100%;
+    background: var(--text-primary);
+    transition: width 0.6s ease;
+}
+
+/* Category Accent Tops */
+.badge::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: var(--accent-yellow);
+}
+
+.categoryLanguage::before {
+    background: var(--accent-blue);
+}
+
+.categoryFramework::before {
+    background: var(--accent-pink);
+}
+
+.categoryDatabase::before {
+    background: var(--accent-green);
+}
+
+.categoryDevops::before {
+    background: var(--accent-orange);
+}
+
+.categoryTool::before {
+    background: var(--accent-purple);
+}
+
+@media (max-width: 480px) {
+    .grid {
+        grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+    }
+}

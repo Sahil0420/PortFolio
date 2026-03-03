@@ -1,0 +1,272 @@
+{
+    "profile": {
+        "name": "Sahil Chandel",
+        "title": "Full-Stack Developer & Systems Architect",
+        "bio": "I build high-performance web applications and distributed systems. Passionate about clean architecture, developer tooling, and pushing the boundaries of what's possible on the web.",
+        "email": "sahilchandel4200@gmail.com",
+        "location": "India",
+        "resume": "none",
+        "cv": "none",
+        "socials": [
+            {
+                "label": "GitHub",
+                "url": "https://github.com/Sahil0420",
+                "icon": "↗"
+            },
+            {
+                "label": "LinkedIn",
+                "url": "https://linkedin.com/in/sahil-chandel-a02779292",
+                "icon": "↗"
+            },
+            {
+                "label": "LeetCode",
+                "url": "https://leetcode.com/u/xtvxRyTlqe/",
+                "icon": "↗"
+            }
+        ]
+    },
+    "projects": [
+        {
+            "id": "order-saas",
+            "title": "Order Processing SaaS",
+            "description": "Production-ready micro-SaaS with async queues, WebSockets, and full observability.",
+            "longDescription": "A high-concurrency micro-SaaS architecture designed for reliable asynchronous order processing. The system uses a decoupled 'Producer-Consumer' model where a Go-based API offloads heavy lifting to background workers via RabbitMQ. It implements distributed systems best practices including database-level idempotency to prevent duplicate charges, and at-least-once delivery guarantees for mission-critical reliability.",
+            "tags": [
+                "Go",
+                "PostgreSQL",
+                "Redis",
+                "RabbitMQ",
+                "WebSockets"
+            ],
+            "features": [
+                "Strict idempotency using tenant-id/key constraints in Postgres",
+                "Fault-tolerant workers with exponential backoff retry logic",
+                "Real-time state transition streaming via WebSockets",
+                "Append-only event logging in Redis for sub-millisecond observability",
+                "Automated webhook dispatching for terminal state notifications",
+                "Prometheus metrics integration for API and Worker health"
+            ],
+            "link": "https://orders.example.dev",
+            "github": "https://github.com/Sahil0420/OrderProcessing",
+            "image": "/projects/order-saas.png"
+        },
+        {
+            "id": "elastic-search",
+            "title": "ElasticSearch Engine",
+            "description": "Spring Boot application with autocomplete, fuzzy search, and optimized querying.",
+            "longDescription": "A robust search microservice built on Spring Boot and Elasticsearch v9. This project solves complex discovery problems by implementing specialized indexing strategies for 50+ diverse course types. It features a custom 'CourseDataLoader' that handles automated index mapping and bulk-indexing on startup, ensuring the search engine is always in sync with the underlying data source.",
+            "tags": [
+                "Java",
+                "Spring Boot",
+                "Elasticsearch",
+                "Docker",
+                "Maven"
+            ],
+            "features": [
+                "Advanced full-text search across multiple document fields",
+                "Instantaneous autocomplete using Elasticsearch Completion Suggesters",
+                "Typo-tolerant 'Fuzzy Search' logic with AUTO-fuzziness tuning",
+                "Multi-dimensional filtering (Price, Age-overlap, Category, and Date)",
+                "Automated index lifecycle management and data seeding at startup",
+                "Optimized pagination and sorting for sub-100ms response times"
+            ],
+            "link": "https://search.example.dev",
+            "github": "https://github.com/Sahil0420/ElasticSearchBackend",
+            "image": "/projects/elastic.png"
+        },
+        {
+            "id": "nazar-blog",
+            "title": "Nazar Blogging Platform",
+            "description": "Clean, SEO-friendly blogging engine built with Go, MongoDB, and high-performance server-side templates.",
+            "longDescription": "Nazar is a lightweight yet powerful content management system designed for speed and discoverability. Built using Go's native net/http and html/template packages, it avoids heavy framework overhead while providing robust features like slug-based routing, full-text search, and a secure admin dashboard. The project leverages MongoDB for flexible data modeling and implements a responsive dark-themed UI with CSS variables for easy customization.",
+            "tags": [
+                "Go",
+                "MongoDB",
+                "HTML5/CSS3",
+                "SEO",
+                "Server-Side Rendering"
+            ],
+            "features": [
+                "Dynamic SEO-friendly URL slug generation with collision prevention",
+                "Full-text search implementation for efficient article discovery",
+                "Automated pagination for articles and category-specific archives",
+                "Secure Admin Dashboard for article lifecycle management",
+                "Responsive card-based UI with a performance-first dark theme",
+                "Flash messaging system for real-time user feedback on actions"
+            ],
+            "link": "http://localhost:8000",
+            "github": "https://github.com/Sahil0420/Nazar",
+            "image": "/projects/nazar.png"
+        },
+        {
+            "id": "woods-indica",
+            "title": "Woods Indica E-Commerce",
+            "description": "Full-featured digital storefront with secure payments, real-time inventory, and multi-provider authentication.",
+            "longDescription": "A sophisticated e-commerce platform built with React and Redux Toolkit, designed to provide a seamless shopping experience. The application features a robust checkout flow integrated with Stripe, multiple authentication methods (Google OAuth & Guest sessions) via Firebase, and a data-driven dashboard using Chart.js for sales visualization. It emphasizes user accessibility and modern UI patterns using Tailwind CSS and DaisyUI.",
+            "tags": [
+                "React",
+                "Redux Toolkit",
+                "Firebase",
+                "Stripe",
+                "Tailwind CSS",
+                "Node.js"
+            ],
+            "features": [
+                "End-to-end encrypted payment processing via Stripe API integration",
+                "Multi-channel Authentication (Google OAuth, Email/Password, and Guest access)",
+                "Centralized state management using Redux Toolkit for cart and user persistence",
+                "Interactive data visualization for sales and product metrics using Chart.js",
+                "Automated customer communication workflows powered by EmailJS",
+                "Responsive, mobile-first design architecture with Tailwind CSS and DaisyUI components"
+            ],
+            "link": "https://woods-indica.example.dev",
+            "github": "https://github.com/Sahil0420/woods-indica",
+            "image": "/projects/woods-indica.png"
+        },
+        {
+            "id": "commontea-social",
+            "title": "CommonTea Social Network",
+            "description": "A secure, ethical social platform featuring automated moderation, RBAC, and community-driven engagement.",
+            "longDescription": "CommonTea is a full-stack social networking ecosystem designed to prioritize user safety and data privacy. Built with the MERN stack, it implements a sophisticated three-tier User Role system (Admin, Moderator, General User). The platform features an automated content reporting workflow, secure JWT-based authentication via Passport.js, and real-time email notifications. It solves modern social media challenges by focusing on transparency and ethical community management rather than intrusive algorithms.",
+            "tags": [
+                "React",
+                "Node.js",
+                "MongoDB",
+                "Redux",
+                "Passport.js",
+                "Tailwind CSS"
+            ],
+            "features": [
+                "Granular Role-Based Access Control (RBAC) for Admins and General Users",
+                "Full social graph implementation (Follow/Unfollow logic and User Discovery)",
+                "Secure Authentication pipeline using JWT, Passport.js, and Crypto-js encryption",
+                "Community Moderation engine allowing users to report posts for Admin review",
+                "Dynamic Post & Comment management with real-time state updates via Redux",
+                "Automated transactional emails for user activity using Nodemailer"
+            ],
+            "link": "https://commontea.example.dev",
+            "github": "https://github.com/Sahil0420/commontea",
+            "image": "/projects/commontea.png"
+        }
+    ],
+    "skills": [
+        {
+            "name": "TypeScript",
+            "category": "Language",
+            "level": 95
+        },
+        {
+            "name": "Go",
+            "category": "Language",
+            "level": 90
+        },
+        {
+            "name": "Python",
+            "category": "Language",
+            "level": 88
+        },
+        {
+            "name": "Java",
+            "category": "Language",
+            "level": 82
+        },
+        {
+            "name": "Next.js",
+            "category": "Framework",
+            "level": 93
+        },
+        {
+            "name": "React",
+            "category": "Framework",
+            "level": 95
+        },
+        {
+            "name": "FastAPI",
+            "category": "Framework",
+            "level": 85
+        },
+        {
+            "name": "Spring Boot",
+            "category": "Framework",
+            "level": 80
+        },
+        {
+            "name": "PostgreSQL",
+            "category": "Database",
+            "level": 88
+        },
+        {
+            "name": "Redis",
+            "category": "Database",
+            "level": 85
+        },
+        {
+            "name": "Elasticsearch",
+            "category": "Database",
+            "level": 78
+        },
+        {
+            "name": "Docker",
+            "category": "DevOps",
+            "level": 90
+        },
+        {
+            "name": "Kubernetes",
+            "category": "DevOps",
+            "level": 75
+        },
+        {
+            "name": "AWS",
+            "category": "DevOps",
+            "level": 82
+        },
+        {
+            "name": "Git",
+            "category": "Tool",
+            "level": 95
+        },
+        {
+            "name": "Linux",
+            "category": "Tool",
+            "level": 90
+        }
+    ],
+    "experience": [
+        {
+            "id": "exp-1",
+            "role": "Full-Stack Developer Trainee",
+            "company": "Softonia",
+            "period": "Jan 2025 — May 2025",
+            "description": "Engaged in an intensive industrial training program focused on building scalable web applications using the MERN stack and Go.",
+            "highlights": [
+                "Collaborated on production-level features using React.js and Node.js",
+                "Optimized backend API endpoints for better response times and data handling",
+                "Applied Agile methodologies and version control best practices in a team environment"
+            ]
+        },
+        {
+            "id": "exp-2",
+            "role": "B.Tech in Computer Science & Engineering",
+            "company": "Govt. P.G. College Dharamshala , Kangra",
+            "period": "2022 — 2025",
+            "description": "Advanced studies in software engineering, data structures, and system design. Bridged the gap between technical theory and complex implementation.",
+            "highlights": [
+                "Developed 'Woods Indica' e-commerce platform using React, Redux, and Firebase",
+                "Built 'Nazar' blogging engine to explore Go-based backend systems and MongoDB",
+                "Deepened expertise in full-stack architecture and third-party API integrations (Stripe, Google Auth)"
+            ]
+        },
+        {
+            "id": "exp-3",
+            "role": "Polytechnic Diploma (Computer Engineering)",
+            "company": "Govt. Polytechnic College Sundernagar , Mandi",
+            "period": "2019 — 2022",
+            "description": "Three-year intensive diploma program focused on the fundamentals of computer hardware, networking, and core programming concepts.",
+            "highlights": [
+                "Mastered fundamental programming logic in C/C++ and Java",
+                "Developed a strong foundation in Database Management Systems (DBMS) and Web Basics",
+                "Consistently ranked in the top tier of the cohort for technical laboratory projects"
+            ]
+        }
+    ]
+}
