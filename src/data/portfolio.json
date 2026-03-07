@@ -27,6 +27,31 @@
     },
     "projects": [
         {
+            "id": "haushalt-ai-assistent",
+            "title": "Honecker Haushalt AI Receptionist",
+            "description": "An automated AI-driven voice receptionist for a premium cleaning agency, handling bookings and job applications.",
+            "longDescription": "(This is not a personal project so it's code is not available anywhere) This project features a sophisticated voice AI assistant integrated into a backend systems architecture. Built using FastAPI and the Vapi AI framework, the system automates the front-desk operations of a household service agency. It features an intelligent RAG (Retrieval-Augmented Generation) knowledge base to answer customer FAQs, a custom-built API to log real-time data into Google Sheets, and a structured logic flow that differentiates between service bookings and job applicants with high accuracy.",
+            "tags": [
+                "Python",
+                "FastAPI",
+                "Vapi AI",
+                "Google Sheets API",
+                "RAG",
+                "Pydantic"
+            ],
+            "features": [
+                "Real-time voice-to-data processing for automated service scheduling",
+                "Custom FastAPI backend for logging bookings and applications into Google Sheets",
+                "Context-aware Knowledge Base (RAG) for handling complex customer queries and FAQs",
+                "Automated Intent Detection to separate customer leads from employment applicants",
+                "Integrated validation pipeline ensuring structured data capture (Names, Dates, Locations)",
+                "Zero-latency tool calling for ending sessions and database synchronization"
+            ],
+            "link": "https://honecker-haushalt.de",
+            "github": "https://github.com/Sahil0420/honecker-backend",
+            "image": "/projects/honecker-ai.png"
+        },
+        {
             "id": "order-saas",
             "title": "Order Processing SaaS",
             "description": "Production-ready micro-SaaS with async queues, WebSockets, and full observability.",
