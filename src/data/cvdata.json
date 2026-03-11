@@ -93,41 +93,46 @@
       ]
     },
     {
+      "name": "Order Processing Micro-SaaS",
+      "year": "2025",
+      "description": [
+        "Developed a production-ready asynchronous order processing micro-SaaS using Go, RabbitMQ, Postgres, and Redis.",
+        "Built an API service in Go handling authenticated HTTP requests, idempotent order submission, and real-time WebSocket streaming.",
+        "Implemented a worker service consuming RabbitMQ messages with retry logic and at-least-once delivery for fault-tolerant processing.",
+        "Used Postgres as the system of record with UNIQUE(tenant_id, idempotency_key) constraints to guarantee idempotency.",
+        "Implemented event logging in Redis to maintain an append-only order event history for observability.",
+        "Added webhook dispatching for terminal order states and exposed Prometheus metrics for monitoring API and worker performance."
+      ]
+    },
+    {
+      "name": "Java Elasticsearch Search Engine",
+      "year": "2024",
+      "description": [
+        "Built a backend search service using Java, Spring Boot, and Elasticsearch for fast full-text search and filtering.",
+        "Designed REST APIs with Spring Boot and managed dependencies using Maven.",
+        "Configured Elasticsearch on a Linux environment and optimized indexing for efficient search performance.",
+        "Containerized the backend and search infrastructure using Docker for reproducible deployments.",
+        "Integrated Elasticsearch Query DSL for advanced search capabilities and structured data retrieval."
+      ]
+    },
+    {
       "name": "Golang Blog Platform",
       "year": "2025",
       "description": [
-        "Built lightweight backend using Go net/http and html/template.",
-        "Integrated MongoDB Atlas.",
-        "Added LaTeX rendering using MathJax.",
-        "Focused on clean design and fast response times."
+        "Built a lightweight backend using Go's net/http and html/template without external frameworks.",
+        "Integrated MongoDB Atlas for scalable cloud-based data storage.",
+        "Implemented LaTeX rendering in blog posts using MathJax.",
+        "Focused on efficient server-side rendering and clean backend architecture."
       ]
     },
     {
       "name": "Woods Indica – E-commerce Website",
       "year": "2024",
       "description": [
-        "Full stack ecommerce with React and Firebase.",
-        "Integrated Razorpay payment gateway.",
-        "Admin dashboard with analytics.",
-        "Dynamic cart and search features."
-      ]
-    },
-    {
-      "name": "Shalafood – Food Ordering Website",
-      "year": "2023",
-      "description": [
-        "MERN stack food ordering platform.",
-        "User authentication and role based access.",
-        "Real-time cart updates."
-      ]
-    },
-    {
-      "name": "Loan Credit Risk Analysis",
-      "year": "2023",
-      "description": [
-        "Trained ML models including Logistic Regression and XGBoost.",
-        "Achieved ROC-AUC of 0.948.",
-        "Built FastAPI app for prediction."
+        "Developed a full-stack e-commerce platform using React and Firebase.",
+        "Integrated Razorpay payment gateway with transaction verification.",
+        "Built an admin dashboard with real-time analytics for monitoring users and sales.",
+        "Implemented dynamic cart functionality along with product search and filtering."
       ]
     }
   ],
