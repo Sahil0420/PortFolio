@@ -1,0 +1,152 @@
+{
+  "name": "Sahil Chandel",
+  "title": "Bachelor of Technology in Computer Science",
+  "email": "sahilchandel4200@gmail.com",
+  "links": {
+    "github": "https://github.com/Sahil0420",
+    "linkedin": "https://www.linkedin.com/in/sahil-chandel-a02779292",
+    "leetcode": "https://leetcode.com/u/xtvxRyTlqe/"
+  },
+  "education": [
+    {
+      "year": "2022–2025",
+      "degree": "B.Tech Computer Science",
+      "institute": "Govt. PG College, Dharamshala",
+      "score": "7.7 / 10"
+    },
+    {
+      "year": "2019–2022",
+      "degree": "Diploma in Computer Science",
+      "institute": "Govt. Polytechnic Sundernagar",
+      "score": "76.62%"
+    },
+    {
+      "year": "2018–2019",
+      "degree": "Secondary Education (X)",
+      "institute": "Nops Public School, Ghumarwin",
+      "score": "90.14%"
+    }
+  ],
+  "experience": [
+    {
+      "role": "Full-Stack Trainee",
+      "company": "Softtonia",
+      "period": "Jan 2025 – May 2025",
+      "location": "Remote / India",
+      "points": [
+        "Developed a multi-role gaming platform using React.js, Node.js, Express.js and WebSockets.",
+        "Deployed production app on AWS EC2 with Nginx reverse proxy.",
+        "Built backend services and validated APIs using Postman, cURL and HTTPie.",
+        "Automated scraping workflows using Python, Selenium and BeautifulSoup.",
+        "Integrated Selenium scripts with Bash tools on AWS.",
+        "Configured virtual display server to avoid scraping detection.",
+        "Built Bash pipelines to automate script execution and clear Chrome cache."
+      ]
+    }
+  ],
+  "skills": {
+    "languages": [
+      "Python",
+      "JavaScript",
+      "Go (Beginner)"
+    ],
+    "frameworks": [
+      "React.js",
+      "Next.js",
+      "Node.js",
+      "Express.js",
+      "Selenium",
+      "BeautifulSoup"
+    ],
+    "databases": [
+      "MySQL",
+      "MongoDB"
+    ],
+    "cloud": [
+      "AWS EC2",
+      "Nginx"
+    ],
+    "tools": [
+      "Git",
+      "GitHub",
+      "Postman",
+      "cURL",
+      "HTTPie"
+    ],
+    "analytics": [
+      "Apache Superset"
+    ]
+  },
+  "projects": [
+    {
+      "name": "Honecker Haushalt AI Receptionist (Freelance)",
+      "year": "2026 - Ongoing",
+      "description": [
+        "Developed an AI-powered voice receptionist for a premium cleaning agency to automate service bookings and job applications.",
+        "Built backend services using FastAPI and the Vapi AI framework for real-time voice interaction and workflow automation.",
+        "Implemented a Retrieval-Augmented Generation (RAG) knowledge base to answer customer FAQs and service-related queries.",
+        "Created custom APIs to log real-time booking and applicant data into Google Sheets using Google Sheets API.",
+        "Designed an intent detection pipeline to differentiate between customer bookings and employment applications.",
+        "Implemented structured data validation using Pydantic to capture customer details such as names, locations, and dates reliably."
+      ]
+    },
+    {
+      "name": "Golang Blog Platform",
+      "year": "2025",
+      "description": [
+        "Built lightweight backend using Go net/http and html/template.",
+        "Integrated MongoDB Atlas.",
+        "Added LaTeX rendering using MathJax.",
+        "Focused on clean design and fast response times."
+      ]
+    },
+    {
+      "name": "Woods Indica – E-commerce Website",
+      "year": "2024",
+      "description": [
+        "Full stack ecommerce with React and Firebase.",
+        "Integrated Razorpay payment gateway.",
+        "Admin dashboard with analytics.",
+        "Dynamic cart and search features."
+      ]
+    },
+    {
+      "name": "Shalafood – Food Ordering Website",
+      "year": "2023",
+      "description": [
+        "MERN stack food ordering platform.",
+        "User authentication and role based access.",
+        "Real-time cart updates."
+      ]
+    },
+    {
+      "name": "Loan Credit Risk Analysis",
+      "year": "2023",
+      "description": [
+        "Trained ML models including Logistic Regression and XGBoost.",
+        "Achieved ROC-AUC of 0.948.",
+        "Built FastAPI app for prediction."
+      ]
+    }
+  ],
+  "certifications": [
+    "Full-Stack Development Internship — Softtonia",
+    "Data Science Beginner — Scaler Academy",
+    "Advanced Python Certificate — Technology Excellence",
+    "Qualified GATE 2025",
+    "Solved 100+ problems on LeetCode"
+  ],
+  "misc": {
+    "hobbies": [
+      "Sci-fi movies",
+      "90s hip-hop",
+      "Chess",
+      "Coding challenges"
+    ],
+    "interests": [
+      "Robotics",
+      "Songwriting",
+      "Learning new technologies"
+    ]
+  }
+}
