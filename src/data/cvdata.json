@@ -48,7 +48,9 @@
     "languages": [
       "Python",
       "JavaScript",
-      "Golang"
+      "Golang",
+      "Java",
+      "Bash"
     ],
     "frameworks": [
       "React.js",
@@ -60,11 +62,14 @@
     ],
     "databases": [
       "MySQL",
-      "MongoDB"
+      "MongoDB",
+      "Redis",
+      "Postgres"
     ],
     "cloud": [
       "AWS EC2",
-      "Nginx"
+      "Nginx",
+      "Ngrok"
     ],
     "tools": [
       "Git",
@@ -72,9 +77,6 @@
       "Postman",
       "cURL",
       "HTTPie"
-    ],
-    "analytics": [
-      "Apache Superset"
     ]
   },
   "projects": [
