@@ -106,7 +106,7 @@
     },
     {
       "name": "Java Elasticsearch Search Engine",
-      "year": "2024",
+      "year": "2026",
       "description": [
         "Built a backend search service using Java, Spring Boot, and Elasticsearch for fast full-text search and filtering.",
         "Designed REST APIs with Spring Boot and managed dependencies using Maven.",
