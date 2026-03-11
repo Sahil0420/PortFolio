@@ -134,6 +134,14 @@ export default function HeroSection({ profile }: HeroSectionProps) {
                     >
                         Download CV
                     </motion.a>
+                    <motion.a
+                        href={"/cv"}
+                        className={styles.btnPrimary}
+                        whileHover={{ scale: 1.05 }}
+                        whileTap={{ scale: 0.95 }}
+                    >
+                        View CV
+                    </motion.a>
                 </motion.div>
             </motion.div>
         </section>
